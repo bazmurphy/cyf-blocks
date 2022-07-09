@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: hsl(240, 61%, 12%);
+    font-family: 'Source Code Pro';
+    color: white;
+}
+
+body > section {
+    border: 2px solid hsl(191, 98%, 68%);
+    padding: 1rem;
+}
+
+.header {
+
+}
+
+.header h1 {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 1rem;
+}
+
+.subheader {
+
+}
+
+.subheader h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.image {
+
+}
+
+.image img {
+    width: 100%;
+}
