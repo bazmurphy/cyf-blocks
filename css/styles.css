@@ -9,6 +9,7 @@ body {
     background: hsl(240, 61%, 12%);
     font-family: 'Source Code Pro';
     color: white;
+    max-width: 1280px;
 }
 
 body > section {
