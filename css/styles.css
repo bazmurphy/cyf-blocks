@@ -38,12 +38,20 @@ body > section {
 }
 
 .subheader {
-
+    
 }
 
 .subheader h2 {
     font-size: 1.5rem;
     padding-bottom: 1rem;
+}
+
+.subheader p {
+    padding-bottom: 1rem;
+}
+
+.subheader p a {
+    color: white;
 }
 
 .subsubheader {
