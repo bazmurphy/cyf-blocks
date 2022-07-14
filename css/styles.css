@@ -13,7 +13,7 @@ body {
 }
 
 body > section {
-    border: 2px solid hsl(191, 98%, 68%);
+    border-bottom: 2px solid hsl(191, 98%, 68%);
     padding: 1rem;
 }
 
