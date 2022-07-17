@@ -39,7 +39,7 @@ body > section {
 }
 
 .subheader {
-    
+    padding-bottom: 1rem;    
 }
 
 .subheader h2 {
@@ -47,12 +47,14 @@ body > section {
     padding-bottom: 1rem;
 }
 
-.subheader p {
-    padding-bottom: 1rem;
-}
-
-.subheader p a {
+.subheader a {
+    display: inline-block;
     color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0.1rem solid white;
+    padding: 0.5rem 1rem;
+    background: hsla(268, 55%, 53%, 0.75);
 }
 
 .subsubheader {
