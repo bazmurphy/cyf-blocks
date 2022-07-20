@@ -3,30 +3,30 @@
     margin: 0;
     padding: 0;
     border: 0;
-    list-style: square;
 }
 
 body {
     max-width: 400px;
-    background: rgb(95, 95, 95);
+    background: rgb(75, 75, 75);
     color: rgb(32, 32, 32);
     font-family: Arial, sans-serif;
-    text-shadow: 0px 0px 1px black;
+    /* text-shadow: 0px 0px 1px black; */
 }
 
 ul, li {
     padding: 0.5rem 1rem;
     border: 0.1rem solid black;
     border-radius: 0.3rem;
-    box-shadow: 2px 4px 4px black;
+    box-shadow: 1px 1px 1px black;
+    list-style: square;
 }
 
 body > ul {
-    background: rgb(139, 139, 139);
+    background: rgb(131, 79, 168);
 }
 
 #root {
-    background: lightslategray;
+    background: rgb(95, 148, 202);
 }
 
 .folder {
