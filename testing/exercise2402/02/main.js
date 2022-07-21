@@ -1,30 +1,32 @@
-var innerListVisibileFlag;
-document.querySelectorAll('.inner-list').forEach((selectedElement) => {
+var innerBlockIsVisible;
+
+
+document.querySelectorAll('.inner-block').forEach((selectedElement) => {
     selectedElement.style.visibility = (false) ? 'visible' : 'hidden';
 
 });
+innerBlockIsVisible = false;
+let element_outer_block = document.getElementById('outer-block');
+element_outer_block.style.backgroundColor = '#6600cc';
+document.querySelectorAll('.inner-block').forEach((selectedElement2) => {
+    selectedElement2.style.backgroundColor = '#cc33cc';
 
-innerListVisibileFlag = false;
+});
 
-document.querySelectorAll('.outer-list').forEach((selectedElement2) => {
 
-    // deep copy global variable 'innerListVisibileFlag' so the current
-    // value is available inside the event listener
-    let pC_7D_7C_DX_25__5gEs_25v6uM_ = JSON.parse(JSON.stringify(innerListVisibileFlag));
-    selectedElement2.addEventListener('click', (event) => {
-        if (innerListVisibileFlag_local == false) {
-            document.querySelectorAll('.inner-list').forEach((selectedElement3) => {
-                selectedElement3.style.visibility = (true) ? 'visible' : 'hidden';
+document.getElementById('outer-block').addEventListener('click', (event) => {
+    if (innerBlockIsVisible == false) {
+        document.querySelectorAll('.inner-block').forEach((selectedElement3) => {
+            selectedElement3.style.visibility = (true) ? 'visible' : 'hidden';
 
-            });
-            innerListVisibileFlag_local = true;
-        } else {
-            document.querySelectorAll('.inner-list').forEach((selectedElement4) => {
-                selectedElement4.style.visibility = (false) ? 'visible' : 'hidden';
+        });
+        innerBlockIsVisible = true;
+    } else {
+        document.querySelectorAll('.inner-block').forEach((selectedElement4) => {
+            selectedElement4.style.visibility = (false) ? 'visible' : 'hidden';
 
-            });
-            innerListVisibileFlag_local = false;
-        }
+        });
+        innerBlockIsVisible = false;
+    }
 
-    });
 });
