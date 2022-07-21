@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Event Propagation</title>
+</head>
+
+<body>
+    <h3>Event Propagation</h3>
+    <p>Each of the HTML elements has an eventListener <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events" target="_blank">MDN Events</a></p>
+    <div id="one">Element one
+        <div id="two">Element two
+            <div id="three">Element three</div>
+        </div>
+    </div>
+    <span>Event log:</span>
+    <div id="output"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>

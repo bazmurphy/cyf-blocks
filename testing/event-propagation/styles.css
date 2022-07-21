@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial;
+    margin: 2rem;
+    background: lightgray;
+}
+
+p {
+    padding: 0 0.5rem;
+}
+
+div {
+    max-width: 300px;
+    padding: 1rem;
+    border: 0.1rem solid black;
+}
+
+#one {
+    background: coral;
+}
+
+#two {
+    background: lime;
+}
+
+#three {
+    background: skyblue;
+}
