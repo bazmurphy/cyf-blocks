@@ -6,11 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Exercise 24 02</title>
+    <title>Exercise 24 02 - List with a hidden 2nd level</title>
 </head>
 
 <body>
-
+    <ul>
+        <li id="root">root
+            <ul>
+                <li class="folder">css
+                    <ul>
+                        <li class="file">styles.css</li>
+                    </ul>
+                </li>
+                <li class="folder">images
+                    <ul>
+                        <li class="file">image001.jpg</li>
+                        <li class="file">image002.jpg</li>
+                        <li class="file">image003.jpg</li>
+                    </ul>
+                </li>
+                <li class="folder">js
+                    <ul>
+                        <li class="file">main.js</li>
+                    </ul>
+                </li>
+                <li class="folder">index.html</li>
+            </ul>
+        </li>
+    </ul>
     <script src="main.js"></script>
 </body>
 
