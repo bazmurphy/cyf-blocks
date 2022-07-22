@@ -1,33 +1,59 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0.5rem;
     border: 0;
+    border-radius: 0.5rem;
 }
 
 body {
-    font-family: Arial;
-    margin: 2rem;
+    font-family: 'Open Sans', sans-serif;
     background: lightgray;
+    max-width: 600px;
 }
 
-p {
-    padding: 0 0.5rem;
+#behaviour-info {
+    font-weight: bold;
 }
 
-div {
-    max-width: 300px;
+#one,
+#two,
+#three {
     padding: 1rem;
     border: 0.1rem solid black;
+    font-weight: bold;
+    background: rgb(235, 235, 235);
 }
 
 #one {
+    margin-top: 1rem;
+    margin-bottom: 1rem;  
     background: coral;
 }
 
 #two {
     background: lime;
+    margin: 1rem;
 }
 
 #three {
     background: skyblue;
+    margin: 1rem;
+}
+
+#reset-logs,
+#change-behaviour {
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
 }

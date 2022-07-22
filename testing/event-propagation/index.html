@@ -11,14 +11,35 @@
 
 <body>
     <h3>Event Propagation</h3>
-    <p>Each of the HTML elements has an eventListener <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events" target="_blank">MDN Events</a></p>
+    <p>Each of the HTML elements has an eventListener<a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank">MDN</a></p>
+    <p>By default, if the Child HTML Element eventListener is triggered by a 'click' that also triggers any Parent HTML Elements eventListeners as if they were also 'click'ed</p>
+    <p>The order in which that happens depends on the behaviour set in the addEventListener() 3rd Parameter</p>
+    <p>addEventListener(event, function, OPTION)</p>
+    <p>If the OPTION is set to false, this gives Bubbling behaviour (the Default)</p>
+    <p>If the OPTION is set to true, this gives Capturing behaviour.</p>
+    <button id="change-behaviour">Switch Behaviour</button>
+    <span>Current Behaviour:</span>
+    <span id="behaviour-info">Bubbling</span>
     <div id="one">Element one
         <div id="two">Element two
             <div id="three">Element three</div>
         </div>
     </div>
-    <span>Event log:</span>
-    <div id="output"></div>
+    <button id="reset-logs">Reset Logs</button>
+    <!-- 
+    <h3>Element Clicked:</p>
+    <div>
+        <ol id="element-clicked"></ol>
+    </div> 
+    -->
+    <h3>Events Triggered:</h3> 
+    <div>
+        <ol id="events-triggered-ordered-list"></ol>
+    </div>
+    <h3>Event Phase:</h3>
+    <div>
+        <ol id="event-phase-ordered-list"></ol>
+    </div>
     <script src="main.js"></script>
 </body>
 
